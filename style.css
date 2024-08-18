@@ -8,16 +8,17 @@
 .container {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #7aa0ec, #656365);
+    background: linear-gradient(135deg, #adc2ec, #767476);
     padding: 10px;  
 }
 
 .Todo {
     /* width: 100px; */
     max-width: 540px;
-    background-color: #99e1f3;
+    background: transparent;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
+    border: grey solid 1px;
     border-radius: 10px;
 }
 
@@ -38,7 +39,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: #edeef0;
-    border-radius: 30px;
+    border-radius: 10px;
     padding-left: 20px;
     margin-bottom: 25px;
 }
@@ -49,17 +50,23 @@ input{
     outline: none;
     background: transparent;
     padding: 10px;
+    font-size: larger;
 }
 
 button{
     border: none;
     outline: none;
     padding: 16px 50px;
-    background-color: #ff9545;
+    background-color: #339ada;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+button:hover{
+    background-color: #002765;
 }
 
 
@@ -91,7 +98,7 @@ ul li.checked{
 }
 
 ul li.checked::before{
-    background-image: url(images/checked.png);
+    background-image: url(images/check.png);
 }
 
 ul li span {
